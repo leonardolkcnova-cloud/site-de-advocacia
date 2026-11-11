@@ -93,6 +93,61 @@
 
             </div>
 
+<section class="simulador" id="simulador">
+
+    <div class="simulador-container">
+
+        <span class="simulador-tag">PLANEJAMENTO PREVIDENCIÁRIO</span>
+
+        <h2>Descubra qual caminho previdenciário
+            pode fazer sentido para você</h2>
+
+        <p>Responda algumas perguntas e receba uma orientação inicial.</p>
+
+        <div class="progresso">
+            <div id="barra-progresso"></div>
+        </div>
+
+        <div id="pergunta-container">
+
+            <h3 id="pergunta">Qual é a sua idade?</h3>
+
+            <div id="opcoes">
+
+                <button class="opcao" data-value="Até 40 anos">
+                    Até 40 anos
+                </button>
+
+                <button class="opcao" data-value="Entre 41 e 50 anos">
+                    Entre 41 e 50 anos
+                </button>
+
+                <button class="opcao" data-value="Entre 51 e 60 anos">
+                    Entre 51 e 60 anos
+                </button>
+
+                <button class="opcao" data-value="Acima de 60 anos">
+                    Acima de 60 anos
+                </button>
+
+            </div>
+
+            <button id="proximo" disabled>Continuar</button>
+
+        </div>
+
+        <div id="resultado" class="resultado" hidden>
+            <h3>Obrigado por responder!</h3>
+            <p id="resumo"></p>
+            <a id="contato-simulador" target="_blank">
+                Conversar com uma especialista
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
             <!-- <div class="container-assuntos-button">
                 <button><a class="link-contact" href="https://contate.me/flavia-advogada2">Falar com advogado
                         especialista
@@ -150,6 +205,7 @@
 
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

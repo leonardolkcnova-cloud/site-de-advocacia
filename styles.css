@@ -635,3 +635,79 @@ footer .img-logo-footer{
     }
 
 }
+
+
+.simulador {
+    padding: 80px 20px;
+    background: #172b45;
+}
+
+.simulador-container {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+}
+
+.simulador-tag {
+    color: #b08d57;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.simulador h2 {
+    color: #172b45;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.simulador p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.progresso {
+    height: 8px;
+    background: #eee;
+    border-radius: 10px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+#barra-progresso {
+    width: 33.33%;
+    height: 100%;
+    background: #b08d57;
+    transition: width 0.3s;
+}
+
+
+.opcao {
+    padding: 18px;
+    min-height: 65px;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    background-color: #ffffff;
+    color: #172b45;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.opcao:hover,
+.opcao.selecionada {
+    background-color: #172b45;
+    color: #ffffff;
+    border: 1px solid #b08d57;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
