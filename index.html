@@ -16,6 +16,29 @@
 </head>
 
 <body>
+
+<nav class="menu-fixo">
+
+    <a href="#" class="logo-menu">
+        <img src="./assets/logo-img.png" alt="Flávia Fantim">
+    </a>
+
+    <div class="links-menu">
+        <a href="#">Início</a>
+        <a href="#assuntos">Serviços</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contatos">Contato</a>
+    </div>
+
+    <a href="https://contate.me/flavia-advogada2"
+       class="botao-menu"
+       target="_blank">
+        Fale conosco
+    </a>
+
+</nav>
+
     <div class="wrapper">
         <header>
             <img class="img-logo" src="./assets/logo-img.png" alt="logo-image">
@@ -25,6 +48,7 @@
         </header>
 
         <section class="section-assuntos">
+            <section class="section-assuntos" id="assuntos"></section>
 
             <h1>Assuntos em que podemos lhe ajudar</h1>
 
@@ -93,60 +117,75 @@
 
             </div>
 
-<section class="simulador" id="simulador">
+            <section class="simulador" id="simulador">
 
-    <div class="simulador-container">
+                <div class="simulador-container">
 
-        <span class="simulador-tag">PLANEJAMENTO PREVIDENCIÁRIO</span>
+                    <span class="simulador-tag">PLANEJAMENTO PREVIDENCIÁRIO</span>
 
-        <h2>Descubra qual caminho previdenciário
-            pode fazer sentido para você</h2>
+                    <h2>Descubra qual caminho previdenciário
+                        pode fazer sentido para você</h2>
 
-        <p>Responda algumas perguntas e receba uma orientação inicial.</p>
+                    <p>Responda algumas perguntas e receba uma orientação inicial.</p>
 
-        <div class="progresso">
-            <div id="barra-progresso"></div>
-        </div>
+                    <div class="progresso">
+                        <div id="barra-progresso"></div>
+                    </div>
 
-        <div id="pergunta-container">
+                    <div id="pergunta-container">
 
-            <h3 id="pergunta">Qual é a sua idade?</h3>
+                        <h3 id="pergunta">Qual é a sua idade?</h3>
 
-            <div id="opcoes">
+                        <div id="opcoes">
 
-                <button class="opcao" data-value="Até 40 anos">
-                    Até 40 anos
-                </button>
+                            <button class="opcao" data-value="Até 40 anos">
+                                Até 40 anos
+                            </button>
 
-                <button class="opcao" data-value="Entre 41 e 50 anos">
-                    Entre 41 e 50 anos
-                </button>
+                            <button class="opcao" data-value="Entre 41 e 50 anos">
+                                Entre 41 e 50 anos
+                            </button>
 
-                <button class="opcao" data-value="Entre 51 e 60 anos">
-                    Entre 51 e 60 anos
-                </button>
+                            <button class="opcao" data-value="Entre 51 e 60 anos">
+                                Entre 51 e 60 anos
+                            </button>
 
-                <button class="opcao" data-value="Acima de 60 anos">
-                    Acima de 60 anos
-                </button>
+                            <button class="opcao" data-value="Acima de 60 anos">
+                                Acima de 60 anos
+                            </button>
 
-            </div>
+                        </div>
 
-            <button id="proximo" disabled>Continuar</button>
+                        <button id="proximo" disabled>Continuar</button>
 
-        </div>
+                    </div>
 
-        <div id="resultado" class="resultado" hidden>
-            <h3>Obrigado por responder!</h3>
-            <p id="resumo"></p>
-            <a id="contato-simulador" target="_blank">
-                Conversar com uma especialista
-            </a>
-        </div>
 
-    </div>
+                    <div id="resultado" class="resultado" hidden>
 
-</section>
+                        <div class="resultado-icone">✓</div>
+
+                        <span class="simulador-tag">QUESTIONÁRIO CONCLUÍDO</span>
+
+                        <h3>Suas respostas foram registradas!</h3>
+
+                        <p id="resumo"></p>
+
+                        <p class="aviso-resultado">
+                            As informações são preliminares e não representam
+                            uma análise jurídica ou garantia de concessão de benefício.
+                        </p>
+
+                        <a id="contato-simulador" target="_blank" rel="noopener noreferrer">
+                            Conversar com uma especialista
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </section>
 
             <!-- <div class="container-assuntos-button">
                 <button><a class="link-contact" href="https://contate.me/flavia-advogada2">Falar com advogado
@@ -157,6 +196,8 @@
         </section>
 
         <section class="section-flavia">
+
+            <section class="section-flavia" id="sobre"></section>
 
 
             <img class="img-flavia" src="./assets/flavia.jpg" alt="img-flavia" />
@@ -172,7 +213,8 @@
                 <p>Conte com uma especialista para te ajudar a planejar sua aposentadoria e garantir o melhor benefício
                     para você!</p>
 
-                <button class="button-sobre"><a class="link-contact-sobre" href="https://contate.me/flavia-advogada2">Falar
+                <button class="button-sobre"><a class="link-contact-sobre"
+                        href="https://contate.me/flavia-advogada2">Falar
                         com advogado especialista
                         agora</a></button></button>
             </div>
@@ -180,24 +222,26 @@
         </section>
         <footer>
 
-              
-                    <img class="img-logo-footer" src="./assets/logo-img.png"/>
-             
-                
 
-                <div class="texto-footer">
-                    <h2>Contatos</h2>
-                    <p><img class="img-contatos" src="./assets/telefone.png"/>(14) 99855-1057</p>
-                    <p><img class="img-contatos" src="./assets/email.png"/> flaviafantim@adv.oabsp.org.br</p>
-                    <p><img class="img-contatos" src="./assets/endereco.png"> Av. Francisco Canhos, 630A - Jaú/SP</p>
-                    <div class="social">
-                        <a href="https://contate.me/flavia-advogada2"><img src="./assets/whtas.png" alt="img-whats" /></a>
-                        <a href="https://www.instagram.com/adv.flaviafantim/"><img src="./assets/instagram.png" alt="img-instagram"/></a>
-                    </div>
+            <img class="img-logo-footer" src="./assets/logo-img.png" />
+
+
+
+            <div class="texto-footer">
+                <footer id="contatos"></footer>
+                <h2>Contatos</h2>
+                <p><img class="img-contatos" src="./assets/telefone.png" />(14) 99855-1057</p>
+                <p><img class="img-contatos" src="./assets/email.png" /> flaviafantim@adv.oabsp.org.br</p>
+                <p><img class="img-contatos" src="./assets/endereco.png"> Av. Francisco Canhos, 630A - Jaú/SP</p>
+                <div class="social">
+                    <a href="https://contate.me/flavia-advogada2"><img src="./assets/whtas.png" alt="img-whats" /></a>
+                    <a href="https://www.instagram.com/adv.flaviafantim/"><img src="./assets/instagram.png"
+                            alt="img-instagram" /></a>
                 </div>
-            
+            </div>
 
-            
+
+
             <!-- <div class="social-footer">
 
             </div> -->
@@ -206,6 +250,25 @@
         </footer>
     </div>
     <script src="./script.js"></script>
+
+<!-- Botão flutuante WhatsApp -->
+<a
+    href="https://contate.me/flavia-advogada2"
+    class="whatsapp-flutuante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a Dra. Flávia pelo WhatsApp">
+
+    <img src="./assets/whtas.png" alt="WhatsApp">
+
+    <span>Fale conosco!</span>
+
+</a>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
 </body>
 
 </html>

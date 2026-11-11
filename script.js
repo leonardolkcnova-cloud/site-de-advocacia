@@ -40,6 +40,13 @@ const progresso = document.getElementById("barra-progresso");
 function mostrarPergunta() {
 
     pergunta.textContent = perguntas[etapa].pergunta;
+    const container = document.getElementById("pergunta-container");
+
+container.style.animation = "none";
+
+void container.offsetWidth;
+
+container.style.animation = "aparecer 0.5s ease";
 
     opcoes.innerHTML = "";
 

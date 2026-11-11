@@ -711,3 +711,258 @@ footer .img-logo-footer{
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
+
+/* Animação das perguntas */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#pergunta-container {
+    animation: aparecer 0.5s ease;
+}
+
+#pergunta {
+    color: #172b45;
+    font-size: 22px;
+    margin: 25px 0;
+}
+
+.opcao {
+    animation: aparecer 0.4s ease;
+}
+
+/* Melhor acabamento do botão */
+
+#proximo {
+    background: #b08d57;
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#proximo:hover:not(:disabled) {
+    background: #947344;
+    transform: translateY(-3px);
+}
+
+/* Resultado final */
+
+.resultado {
+    animation: aparecer 0.6s ease;
+    padding: 30px 15px;
+}
+
+.resultado h3 {
+    color: #172b45;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.resultado p {
+    background: #f5f3ef;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+#contato-simulador:hover {
+    background: #947344;
+    transform: translateY(-3px);
+}
+
+#contato-simulador {
+    transition: 0.3s;
+}
+
+.resultado-icone {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    background: #172b45;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.aviso-resultado {
+    font-size: 13px;
+    color: #777;
+    background: #f8f7f4;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* BOTÃO FLUTUANTE WHATSAPP */
+
+.whatsapp-flutuante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp-flutuante img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.whatsapp-flutuante:hover {
+    transform: translateY(-5px);
+    background: #1ebe5d;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .whatsapp-flutuante {
+        bottom: 18px;
+        right: 15px;
+        padding: 12px;
+    }
+
+    .whatsapp-flutuante span {
+        display: none;
+    }
+
+    .whatsapp-flutuante img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* MENU FIXO */
+
+.menu-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #172b45;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+
+    z-index: 10000;
+}
+
+.logo-menu img {
+    width: 110px;
+    height: auto;
+}
+
+.links-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.links-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.links-menu a:hover {
+    color: #b08d57;
+}
+
+.botao-menu {
+    background: #b08d57;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-menu:hover {
+    background: #947344;
+    transform: translateY(-2px);
+}
+
+/* ESPAÇO PARA O MENU */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    padding-top: 85px;
+}
+
+@media (max-width: 768px) {
+
+    .menu-fixo {
+        height: 70px;
+        padding: 0 15px;
+    }
+
+    .logo-menu img {
+        width: 85px;
+    }
+
+    .links-menu {
+        gap: 10px;
+    }
+
+    .links-menu a {
+        font-size: 11px;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+}
+
